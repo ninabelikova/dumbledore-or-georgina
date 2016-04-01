@@ -1,0 +1,42 @@
+<html ng-app="app">
+<head>
+  <meta charset="utf-8">
+  <meta name="theme-color" content="#2c80ff">
+  <title>Dumbledore or Georgina?</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+  <script src="app.js"></script>
+</head>
+<body ng-controller="MainControl">
+  <div class="container">
+
+    <div class="intro">
+      <h1>Who said it?</h1>
+    </div>
+
+    <div class="question" ng-show="finished===false">
+      <p>
+        Question {{ question + 1}} / 10
+      </p>
+      <blockquote>
+        <p>
+          {{ current_question }}
+        </p>
+      </blockquote>
+    </div>
+
+    <div class="buttons" ng-show="!solved && !finished">
+      <p>––</p>
+      <button class="hvr-grow-rotate" ng-click="show_answer('Georgina')">Georgina</button>
+      <p>or</p>
+      <button class="hvr-grow-rotate" ng-click="show_answer('Dumbledore')">Dumbledore</button>
+    </div>
+
+    <div class="reveal">
+      <p>{{ reveal }}</p>
+      <button class="hvr-grow-rotate" ng-show="solved" ng-click="show_next()">{{ next }}</button>
+    </div>
+  </div>
+
+</body>
+</html>

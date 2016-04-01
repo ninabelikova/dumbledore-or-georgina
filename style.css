@@ -1,0 +1,98 @@
+body {
+  font-family: "Avenir", sans-serif;
+  text-align: center;
+  background-color: #2c80ff;
+  color: #fff;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: .7em;
+}
+
+p {
+  font-size: 1.1em;
+}
+
+::selection {
+    background-color: #FFDD33;
+    color: #222222;
+}
+
+::-moz-selection {
+    background-color: #FFDD33;
+    color: #222222;
+}
+
+blockquote p {
+  font-size: 1.7em;
+  line-height: 1.15;
+  display: inline;
+}
+
+blockquote:before {
+  display: inline;
+  font-family: "Georgia";
+  content: "\201C";
+  font-size: 2em;
+}
+
+blockquote:after {
+  display: inline;
+  font-family: "Georgia";
+  content: "\201D";
+  font-size: 2em;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  padding: .5em .7em .5em;
+  background-color: #FFDD33;
+  color: #222222;
+  font-size: 1.2em;
+  margin: 0 1em 0 1em;
+  cursor: pointer;
+}
+
+.container {
+  padding: 4em 0 4em;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.question {
+  padding: 2em 0 2em;
+}
+
+.buttons p {
+  display: inline-block;
+}
+
+.reveal {
+  font-size: 1.2em;
+  padding: 2em 0 2em;
+}
+
+/* Hover.css by Ian Lunn */
+
+/* Grow Rotate */
+.hvr-grow-rotate {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+}
+.hvr-grow-rotate:hover, .hvr-grow-rotate:focus, .hvr-grow-rotate:active {
+  -webkit-transform: scale(1.1) rotate(4deg);
+  transform: scale(1.1) rotate(4deg);
+}
